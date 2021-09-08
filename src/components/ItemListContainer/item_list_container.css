@@ -1,5 +1,7 @@
-p{
+.item_list_container{
     color:darkslategray;
     background-color: lightblue;
-    font-size: 50px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 100px;
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import'./item_list_container.css'
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
     return (
-        <div>
-            <p>Esta es la quinta vez que hago este proyecto, siempre por alguna razón se termina rompiendo todo o no logro entender los desafíos , volviendo a ver las clases y con otro material fuera de las clase de coderHouse estoy intentando hacerlo y me queda menos de una semana</p>
+        <div className="item_list_container">
+            <h1>{greeting}</h1>
         </div>
     )
 }
