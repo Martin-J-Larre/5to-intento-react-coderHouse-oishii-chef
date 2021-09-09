@@ -5,3 +5,8 @@
   text-decoration: none;
   list-style: none;
 }
+/* Variables */
+:root{
+  --main-green:#2ECC71;
+  --main-yellow:#F7FA04;
+}

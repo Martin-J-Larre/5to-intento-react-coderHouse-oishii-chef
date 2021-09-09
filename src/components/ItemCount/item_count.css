@@ -1,0 +1,57 @@
+.counter-container{
+    border: 1px solid black;
+    width: 20%;
+    border-bottom: 5px;
+    display: block;
+    margin: 20px auto 0 auto;
+    color: #fff;
+}
+h3{
+    padding: 10px 0px;
+}
+.counter-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    display: inline-block;
+    vertical-align: top;
+    font-size: medium;
+    text-align: left;
+}
+.btn{
+    display: inline-block;
+    background-color:var(--main-green); 
+    border: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn-minus:hover{
+    color: red;
+}
+.btn-plus:hover{
+    color:var(--main-yellow);
+}
+.counter{
+    width: 15%;
+    background-color: var(--main-green);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.add-cart{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 100%;
+}
+.add-cart:hover{
+    color:var(--main-yellow);
+}

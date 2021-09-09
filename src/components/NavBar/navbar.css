@@ -1,6 +1,6 @@
 /* NavBar */
 .header{
-    background-color:#2ECC71;
+    background-color:var(--main-green);
     width: 100%;
     position: fixed;
   }
@@ -28,5 +28,5 @@
     color:#fff
   }
   .header-nav ul li a:hover{
-      color: #F7FA04 ;
+      color: var(--main-yellow) ;
   }
