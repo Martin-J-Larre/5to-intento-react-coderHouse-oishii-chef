@@ -1,5 +1,4 @@
 import React,{useState, useEffect} from 'react';
-import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
 import products from '../../productos-fake-api';
 import'./item_list_container.css';
@@ -19,7 +18,6 @@ const ItemListContainer = ({greeting}) => {
     return (
         <div className="item_list_container">
             <h1>{greeting}</h1>
-            <ItemCount stock={10} initial={1} />
             <ItemList list={list} />
         </div>
     )
