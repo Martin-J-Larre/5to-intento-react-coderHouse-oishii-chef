@@ -1,0 +1,7 @@
+.list-product{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 20;
+}

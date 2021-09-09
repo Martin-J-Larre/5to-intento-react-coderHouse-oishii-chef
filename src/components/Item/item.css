@@ -1,0 +1,29 @@
+.product-container{
+    background-color: lightcoral;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+h2{
+    color:var(--main-green);
+}
+p{
+    padding-top: 10px;
+}
+button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #fff;
+    background-color: var(--main-green);
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    color: var(--main-yellow);
+}

@@ -2,12 +2,12 @@ import React, {useState}from 'react';
 import './item_count.css';
 import { FaMinus,FaPlus } from 'react-icons/fa';
 
-const ItemCount = ({ stock, initial,  onAdd }) => {
+const ItemCount = ({ stock, initial}) => {
 
     const [counter,setCounter] = useState(initial);
 
-     //****Por qué me hizo sacar la declaracion en onAdd abajo??
-    onAdd = () => setCounter(counter + 1);
+    const onAdd = () => setCounter(counter + 1);
+
     const restar = () => setCounter(counter - 1);
 
     return (
@@ -17,14 +17,14 @@ const ItemCount = ({ stock, initial,  onAdd }) => {
                 <button 
                 className="btn col btn-minus col"
                 onClick={restar}
-                disabled={counter === initial ? "disabled":""}>
+                disabled={counter === initial}>
                       <FaMinus />  
                 </button>
                 <div className="counter col">{counter}</div>
                 <button 
                 className="btn btn-plus col"
                 onClick={onAdd}
-                disabled={counter === stock ? "disabled":""}>
+                disabled={counter === stock}>
                       <FaPlus />  
                 </button>
             </div>
