@@ -8,25 +8,29 @@ const products = [
         id :1,
         title: "lorem lorem lorem ",
         description:"lorem lorem lorem lorem lorem lorem ",
-        img: product1
+        img: product1,
+        price: 100
     },
     {
         id :1,
         title: "lorem lorem lorem ",
         description:"lorem lorem lorem lorem lorem lorem ",
-        img: product2
+        img: product2,
+        price:200
     },
     {
         id :1,
         title: "lorem lorem lorem ",
         description:"lorem lorem lorem lorem lorem lorem ",
-        img: product3
+        img: product3,
+        price:300
     },
     {
         id :1,
         title: "lorem lorem lorem ",
         description:"lorem lorem lorem lorem lorem lorem ",
-        img: product4
+        img: product4,
+        price:400
     }
 ]
 

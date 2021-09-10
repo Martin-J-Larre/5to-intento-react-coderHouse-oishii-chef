@@ -1,23 +1,28 @@
-import React,{useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import ItemList from '../ItemList/ItemList';
 import products from '../../productos-fake-api';
-import'./item_list_container.css';
+import { useParams } from 'react-router';
 
-const listProducts = new Promise (
-    (result,reject) => setTimeout(() => result(products),2000)
-)
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
     const[list,setList] = useState([]);
+    const{categoryName} = useParams();
+
+    function filCategory(item) {
+        return item.category === categoryName
+    }
 
     useEffect(() => {
-        listProducts.then(setList)
-    },[])
+        setTimeout(() => {
+            let itemsPorCategoria = products.filter(filCategory);
+            setList(categoryName ? itemsPorCategoria : products);
+        },2000)
+    },)
+  
 
     return (
-        <div className="item_list_container">
-            <h1>{greeting}</h1>
+        <div>
             <ItemList list={list} />
         </div>
     )

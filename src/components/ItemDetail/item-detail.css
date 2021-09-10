@@ -1,0 +1,25 @@
+.item-detail-container{
+    background-color: cyan;
+    border: 2px dotted brown;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+.item-detail-info{
+    margin: auto 0;
+}
+.item-detail-img{
+    padding: 10px;
+}
+h3{
+    color: var(--main-green);
+}
+.item-detail-description{
+    font-size: 20px;
+}
+.item-detail-price{
+    font-size: 24px;
+    color: chocolate;
+}

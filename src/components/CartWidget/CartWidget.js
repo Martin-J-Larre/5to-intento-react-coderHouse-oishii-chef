@@ -7,9 +7,7 @@ const CartWidget = () => {
     return (
         <div>
             <li className="cart-container">
-                <a href="#">
-                <FaShoppingCart />
-                </a>
+               <FaShoppingCart />
             </li>
         </div>
     )

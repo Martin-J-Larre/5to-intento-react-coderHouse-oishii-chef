@@ -1,7 +1,10 @@
 .list-product{
-    display: flex;
-    overflow: hidden;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap: 30px;
+    justify-items:center;
+    align-items: center;
+    z-index: 30;
     width: 100%;
-    z-index: 20;
+    padding: 25px 0;
 }

@@ -1,32 +1,33 @@
 /* NavBar */
 .header{
-    background-color:var(--main-green);
     width: 100%;
-    position: fixed;
+    height: 100px;
+    background-color:var(--main-green);
+    /* position: fixed; */
   }
-  .header-nav{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  .logo{
+      /* width:100px; */
+      margin-left: 20px;
   }
-  .nav-logo img{
-      width: 300px;
-      position: absolute;
-  }
-  .header-nav ul{
+  .header-navbar{
+    border: 1px dotted rgb(138, 4, 4);
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    border: dotted 1px #fff;
-   }
-  .header-nav ul li{
-    border: dotted 1px rgb(238, 136, 136);
-    padding: 10px;
-    margin: 25px;
+    /* Ir Mnaejandolo con el flex hasta que quede bien */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
   }
-  .header-nav ul li a{
-    display: block;
-    color:#fff
+  .navbar{
+    /* Ver si queda mejor con grid o flex */
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 50px;
+    width: 50vw;
   }
-  .header-nav ul li a:hover{
-      color: var(--main-yellow) ;
+  .navbar-link{
+    color: #fff;
+  }
+  .navbar-link:hover{
+    color:var(--main-yellow);
   }

@@ -1,6 +1,9 @@
 .cart-container{
-    font-size: 25px;
+    font-size: 28px;
     color:#fff ;
     display: block;
     cursor: pointer;
+}
+.cart-container:hover{
+    color: var(--main-yellow);
 }
