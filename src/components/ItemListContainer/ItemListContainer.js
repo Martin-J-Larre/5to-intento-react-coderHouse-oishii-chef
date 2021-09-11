@@ -17,7 +17,7 @@ const ItemListContainer = () => {
         setTimeout(() => {
             let itemsPorCategoria = products.filter(filCategory);
             setList(categoryName ? itemsPorCategoria : products);
-        },2000)
+        },1000)
     },)
   
 

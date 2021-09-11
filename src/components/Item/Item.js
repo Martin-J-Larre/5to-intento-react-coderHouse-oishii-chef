@@ -8,8 +8,8 @@ const Item = ({item:{id, title, description, img}}) => {
             <img src={img}m alt={id} width="350"/>
             <h3>{title}</h3>
             <p>{description}</p>
-            <button>Add</button>
-            <Link to={`/item/${id}`}><button>Ver detalle</button></Link>
+            <button className="btn-add">Add</button>
+            <Link to={`/item/${id}`}><button className="btn-link">Ver detalle</button></Link>
         </div>
     )
 }

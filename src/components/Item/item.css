@@ -1,9 +1,11 @@
 .item-container{
-    background-color: lightcoral;
-    max-width: 300px;
+    background-color:#fff;
     margin: auto;
     display: block;
     text-align: center;
+    border: 2px solid var(--main-green);
+    border-radius: 5px;
+
 }
 img{
     width: 100%;
@@ -16,7 +18,8 @@ p{
     text-align: center;
     color: var(--main-green);
 }
-button{
+.btn-add,
+.btn-link{
     border: none;
     outline: 0;
     padding: 12px;
@@ -25,17 +28,9 @@ button{
     text-align: center;
     width: 100%;
     cursor: pointer;
+    border-radius: 5px;
+    margin: 4px;
 }
 button:hover{
     color: var(--main-yellow);
-}
-button{
-    border: none;
-    outline: none;
-    padding: 10px;
-    color: #fff;
-    background-color: var(--main-green);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
 }

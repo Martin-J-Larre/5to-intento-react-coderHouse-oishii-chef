@@ -7,7 +7,7 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 const getItem = (productId) => {
      return new Promise(result => setTimeout(() =>
      { result(products.find(product => product.id === parseInt(productId)))
-    },2000))
+    },1000))
 }
 
 const ItemDetailContainer = () => {
@@ -27,10 +27,11 @@ const ItemDetailContainer = () => {
     }, [productId])
 
     return (
-        <div>
+        
+        <div className="loading">
             {loading ? "Loading..." : <ItemDetail item={item} />}
         </div>
     )
 }
-
+//Acomodar el loading en el medio de la pantalla
 export default ItemDetailContainer;

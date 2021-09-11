@@ -16,7 +16,7 @@ const NavBar = () => {
         <div className="header">
             <div className="header-navbar">
                 <NavLink to='/' className="logo">
-                    <img src={logo} alt={"logo"} />
+                    <img src={logo} alt={"logo"}/>
                 </NavLink>
                 <ul className="navbar">
                     {links.map((link, i) => {

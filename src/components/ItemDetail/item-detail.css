@@ -1,17 +1,20 @@
 .item-detail-container{
-    background-color: cyan;
+    background-color:lightblue;
     border: 2px dotted brown;
     width: 50%;
     margin: auto;
     display: flex;
     text-align: center;
-    margin-top: 50px;
+    padding-top: 200px;
 }
 .item-detail-info{
     margin: auto 0;
+    border: 2px solid red;
 }
 .item-detail-img{
     padding: 10px;
+    border: 2px solid green;
+
 }
 h3{
     color: var(--main-green);
@@ -22,4 +25,17 @@ h3{
 .item-detail-price{
     font-size: 24px;
     color: chocolate;
+}
+.btn-compra{
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: var(--main-green);
+    color: #fff;
+    width: 300px;
+    cursor: pointer;
 }

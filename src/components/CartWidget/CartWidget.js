@@ -6,7 +6,7 @@ import './cartwidget.css'
 const CartWidget = () => {
     return (
         <div>
-            <li className="cart-container">
+            <li className="cart-icon">
                <FaShoppingCart />
             </li>
         </div>

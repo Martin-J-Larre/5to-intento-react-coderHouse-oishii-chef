@@ -1,10 +1,10 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
-import { Switch, Route } from 'react-router-dom';
 import Home from '../Home/Home';
 import AboutUs from '../AboutUs/AboutUs';
-
+import Cart from '../Cart/Cart';
 
 const Rutas = ({greeting}) => {
     return (
@@ -32,7 +32,7 @@ const Rutas = ({greeting}) => {
                     </Route>
 
                     <Route path="/cart">
-
+                        <Cart />
                     </Route>
 
             </Switch>
