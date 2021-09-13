@@ -50,6 +50,7 @@ h5{
     border-radius: 5px;
 }
 .add-cart{
+    border: none;
     font-size: 16px;
     font-weight: 300;
     margin-top: 20px;
