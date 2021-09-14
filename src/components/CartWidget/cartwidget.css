@@ -1,7 +1,18 @@
 .cart-icon{
     color: #fff;
     font-size: 25px;
+    display: block;
 }
 .cart-icon:hover{
+    color: var(--main-yellow);
+}
+.icon-count{
+    color:#fff;
+    font-size: 12px;
+    padding: 15px 5px;
+    position: absolute;
+    top: 30px;
+}
+.icon-count:hover{
     color: var(--main-yellow);
 }

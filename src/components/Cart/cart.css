@@ -58,3 +58,30 @@
     background-color: var(--main-green);
     color:#fff;
 }
+.product-l-price::before{
+    content:'$';
+}
+.totals-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+}
+label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: right;
+}
+.totals-value {
+    float: right;
+    width: 21%;
+    text-align: right;
+}
+.totals-value::before{
+    content:'$';
+}
+.total-price{
+    color: #0B1D51;
+    font-weight: bold;
+}

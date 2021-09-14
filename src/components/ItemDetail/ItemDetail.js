@@ -9,34 +9,17 @@ const ItemDetail = ({item}) => {
 
 const stock = 10
 const initial = 1
-const [stocks, setStocks] = useState(stock)
-const [count, setCount] = useState(initial)
 const [add, setAdd] = useState(false)
-const [quantity, setQuantity] = useState(0)
+const [quantity, setQuantity] = useState(1)
 const { addItem } = useCartContext()
 
-const increase = () => { 
-  if(count < stock){
-      setCount(count + 1)
-      setStocks(stocks - 1)
-  }
+const itemQuantity = (count) => {
+  setQuantity(count)
 }
-const decrease = () => { 
-  if(count > initial){
-      setCount(count - 1)
-      setStocks(stocks + 1)
-  }
-}
-const onAdd = () => { 
-  if(count <= stock){
-      setAdd(true)
-      setQuantity(count)
-  }
-  console.log("cantidad en onAdd",quantity);
-}
+
 const addToCart = () => {
   addItem(item, quantity)
-  console.log("cantidad addtoCart",quantity)
+  setAdd(true)
 }
 
    return (
@@ -54,17 +37,14 @@ const addToCart = () => {
 
                 <p className="item-detail-price">{item.price}</p>
 
-                <p>Stock: {stocks-initial}</p>
-
                 <ItemCount
                  stock={stock}
                  initial={initial}
-                 count={count}
-                 increase={increase}
-                 decrease={decrease}
-                 onAdd={onAdd}
-                />
-                {add ? <Link to= {'/cart'}><button className="btn-compra" onClick={addToCart}>Comprar Ahora</button></Link> : null}
+                 onAdd={itemQuantity}
+                 />
+                 <button className="btn" onClick={addToCart}>Add to cart</button>
+                 {/* Mejorar esto en para que en todos los estado cambien la cantidad del item en el counter y también con los precios Poner el boton de "Get now en el cart" */}
+                 {add ? <Link to={'/cart'}><button className="btn">Get now</button></Link> : null}
               </div>
             </div>
     )    
