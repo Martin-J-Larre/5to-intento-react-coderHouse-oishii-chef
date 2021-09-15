@@ -4,19 +4,18 @@ import './item_count.css';
 
 const ItemCount = ({stock,  initial, onAdd}) => {
     const [count, setCount] = useState(initial)
-    const [stocks, setStocks] = useState(stock)
+   
 
     const increase = () => { 
         if(count < stock){
             setCount(count + 1)
-            setStocks(stocks - 1)
-            console.log(count)
+           
         }
        }
         const decrease = () => { 
             if(count > initial){
                 setCount(count - 1)
-                setStocks(stocks + 1)
+                
             }
     
         }
@@ -35,7 +34,7 @@ const ItemCount = ({stock,  initial, onAdd}) => {
                       <FaPlus />  
                 </button>
            </div>
-            <p>Stock: {stocks-initial}</p>
+            <p>Stock: {stock-count}</p>
         </div>
     )
   

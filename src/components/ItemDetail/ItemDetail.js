@@ -7,7 +7,7 @@ import './item-detail.css'
 
 const ItemDetail = ({item}) => {
 
-const stock = 10
+const stock = item.stocks
 const initial = 1
 const [add, setAdd] = useState(false)
 const [quantity, setQuantity] = useState(1)
